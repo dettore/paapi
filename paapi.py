@@ -1,3 +1,6 @@
+#Patterned after CTA Bus Tracker API Pythonista Project
+#https://github.com/kpphillips/Pythonista-Projects/tree/master/CTA%20Bus%20Tracker%20API
+
 #imports
 import pakey
 import requests
