@@ -2,7 +2,9 @@ import paapi as c
 import json
 
 # ** WORKS **
-#r=c.getTime()
+# Stop 568 is lower PNR lot
+
+r=c.getTime()
 #r=c.getVehicles(['8'],False)
 #r=c.getRoutes()
 #r=c.getDirections('8')
@@ -11,9 +13,14 @@ import json
 #r=c.getFeeds()
 
 def testPredictions():
-        
+    
+    # 1502 is Stanwix
+    # 45 is Market at Liberty
+    #r=c.getPredictions('568',['8'])
     #r=c.getPredictions('618',['8'])  # at West View Towers
     r=c.getPredictions('733',['8'])    # at West view Tower (Park Plaza Dr)
+    # 15716 is Upper Lot PNR
+    #r=c.getPredictions('15716',['O1'])
 
     ##
     print(json.dumps(r, indent=1))
@@ -43,4 +50,4 @@ def testBulletins():
             
 
 #Print results of the api calls
-#print(json.dumps(r, indent=1))
+print(json.dumps(r, indent=1))

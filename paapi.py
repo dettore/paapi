@@ -20,7 +20,7 @@ apiKey=pakey.apiKey
 def request(url):
     r=requests.get(url)
     parsed_json = json.loads(r.content)
-    print('\nIt Worked!, Have a beer\n')
+    print('\nResponse from Port Authority API.\n')
     return parsed_json
 
 
