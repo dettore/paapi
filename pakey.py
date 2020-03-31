@@ -1,2 +1,2 @@
 
-apiKey = 'addyourkeyhere'
+apiKey = '{Insert API Key Here}'
